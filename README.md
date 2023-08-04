@@ -8,13 +8,13 @@ dispositivo controlado.
 
 A classe ControleRemoto implementa os seguintes métodos:
 
-.play(): Inicia a reprodução do dispositivo controlado.
-.pause(): Pausa a reprodução do dispositivo controlado.
-.ligar(): Ligar o dispositivo.
+.play(): Inicia a reprodução do dispositivo controlado.\
+.pause(): Pausa a reprodução do dispositivo controlado.\
+.ligar(): Ligar o dispositivo.\
 .desligar(): Desligar o dispositivo.
-.abirMenu(): exibir informações do dispositivo.
-.fecharMenu(): Deixa de exibir o menu.
-.aumentarVolume(): aumentar volume do dispositivo.
-.diminuirVolume(): diminuir volume do dispositivo.
-.ligarMudo(): desativar o som.
+.abirMenu(): exibir informações do dispositivo.\
+.fecharMenu(): Deixa de exibir o menu.\
+.aumentarVolume(): aumentar volume do dispositivo.\
+.diminuirVolume(): diminuir volume do dispositivo.\
+.ligarMudo(): desativar o som.\
 .desligarMudo(): ativar o som novamente.
