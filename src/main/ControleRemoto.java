@@ -18,7 +18,12 @@ public class ControleRemoto  implements Controlador {
     }
 
     public void setVolume(int volume) {
-        this.volume = volume;
+        if(volume < 0 || volume > 100) {
+            throw new IllegalStateException("Número de volume inválido.");
+        }
+        else {
+            this.volume = volume;
+        }
     }
 
     public boolean isLigado() {
@@ -100,7 +105,7 @@ public class ControleRemoto  implements Controlador {
             setVolume(0);
         }
         else {
-            throw new RuntimeException("Não é possível mutar! ");
+            throw new IllegalStateException("Não é possível mutar! ");
         }
     }
 
@@ -110,7 +115,7 @@ public class ControleRemoto  implements Controlador {
             setVolume(50);
         }
         else {
-            throw new RuntimeException("Não é possível desmutar! ");
+            throw new IllegalStateException("Não é possível desmutar! ");
         }
     }
 
@@ -120,7 +125,7 @@ public class ControleRemoto  implements Controlador {
             setTocando(true);
         }
         else {
-            throw new RuntimeException("Não é possível dar play!");
+            throw new IllegalStateException("Não é possível dar play!");
         }
     }
 
@@ -130,7 +135,7 @@ public class ControleRemoto  implements Controlador {
             setTocando(false);
         }
         else {
-            throw new RuntimeException("Não é possível pausar!");
+            throw new IllegalStateException("Não é possível pausar!");
         }
 
     }

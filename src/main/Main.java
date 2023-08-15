@@ -72,5 +72,6 @@ public class Main {
                     System.out.println("Número inválido! Deve - se digitar um número entre 1 a 9. ");
             }
         } while (controle.isLigado());
+        sc.close();
     }
 }
