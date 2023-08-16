@@ -51,7 +51,6 @@ public class TestControleRemoto {
         String menuOutput = controle.fecharMenu();
         assertEquals("Fechando Menu...", menuOutput);
 
-        // Testar abrirMenu pode ser mais complexo, pois envolve uma saída formatada
         // Aqui, apenas verificamos se não lança exceção
         assertDoesNotThrow(() -> controle.abrirMenu());
     }
