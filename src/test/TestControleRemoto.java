@@ -1,6 +1,7 @@
-package main;
+package test;
 
 import exception.ControleRemotoDesligadoException;
+import main.ControleRemoto;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -51,7 +52,7 @@ public class TestControleRemoto {
         String menuOutput = controle.fecharMenu();
         assertEquals("Fechando Menu...", menuOutput);
 
-        // Testar abrirMenu pode ser mais complexo, pois envolve uma saída formatada
+
         // Aqui, apenas verificamos se não lança exceção
         assertDoesNotThrow(() -> controle.abrirMenu());
     }
